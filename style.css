@@ -9,8 +9,21 @@ body{
 .full{
     display: flex;
     flex-wrap: wrap;
-    padding-left: 13em;
-    padding-right: 13em;
+    padding-left: 10em;
+    padding-right: 10em;
+}
+.content .learn{
+    position: relative;
+    float: left;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+}
+.content .below{
+    position: relative;
+    float: right;
+    margin-top: auto;
+    justify-content: space-around;
 }
 
 .r_t{
@@ -19,15 +32,21 @@ body{
     text-align: center;
     width: 100%; 
     border-radius: 5px; 
-    margin-left: 5em; 
+    margin: auto;
+    position: relative;
+    float: right;
+    justify-content: space-around;
     margin-top: 10px;
 }
 .r_below{
     background-color: white;
-    margin-left: 5em; 
+    /* margin-left: 5em;  */
     width: 100%;
     border-radius: 5px;
     margin-top: 1em;
+    position: relative;
+    float: right;
+    justify-content: space-around;
     /* margin-top: 5px; */
     padding: 10px;
 }
@@ -44,6 +63,7 @@ input{
     font-weight: 400;
     font-size: small;
 }
+
 h1{
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -59,18 +79,50 @@ p{
 @media screen and (max-width:375px) {
     .full{
         width: 100%;
-    }
-    .content{
-        width: 100%;
         display: flex;
         flex-direction: column;
+        flex-wrap: nowrap;
         padding-left: 0;
+        padding-right: 0;
+    }
+    .input{
+        margin: auto;
+        margin-bottom: 1em;
+    }
+    .content{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
-        height: 100vh;
-
+        justify-content: space-around;
     }
     .content .below{
         display: flex;
+    }
+    .top_h{
+        margin-top: -7em;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    .top_p{
+        margin-top: -3em;
+        text-align: center;
+    }
+    .r_t{
+        margin-top: -5em;
+        margin-left: -0.5em;
+        width: 53%;
+        padding-right: 5em;
+        padding-left: 5em;
+        text-align: center;
+    }
+    .r_below{
+        margin-bottom: 2em;
+    }
+    .d_p{
+        width: 75%;
+        margin: auto;
     }
 }
